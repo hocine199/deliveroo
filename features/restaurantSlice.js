@@ -10,6 +10,7 @@ const initialState = {
         address: null,
         short_description: null,
         dishes: null,
+        src: null
     }
 }
 
@@ -25,7 +26,7 @@ export const restaurantSlice = createSlice({
 
 export const {setRestaurant} = restaurantSlice.actions
 
-export const selectRestaurant = (state) => state.Restaurant.restaurant
+export const selectRestaurant = (state) => state.restaurant.restaurant
 
 
 export default restaurantSlice.reducer
